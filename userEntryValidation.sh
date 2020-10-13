@@ -41,3 +41,13 @@ then
 else
         echo "invalid"
 fi
+
+#uc5 minimum 8 characters
+read -p "enter password:" password
+pwd_Pattern="^[a-zA-Z]{8,}$"
+if [[ $password =~ $pwd_Pattern ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
